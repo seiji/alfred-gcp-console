@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.seiji.gcpconsole</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>F9C5D524-F6F0-4EF4-BFC8-759A708D7627</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ECBD7858-52A2-4814-80A6-B5B18CA044DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>seiji</string>
+	<key>description</key>
+	<string>GCP Console</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>GCP Console</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://console.cloud.google.com{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>ECBD7858-52A2-4814-80A6-B5B18CA044DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"Management Tools\/Cloud Billing API.png","title":"Billing","arg":"\/billing","subtitle":"sub"},{"imagefile":"Identity &amp; Security\/Cloud IAM.png","title":"IAM &amp; admin","arg":"\/billing","subtitle":"sub"},{"imagefile":"Compute\/App Engine.png","title":"App Engine","arg":"\/appengine","subtitle":"sub"},{"imagefile":"Compute\/Compute Engine.png","title":"Compute Engine","arg":"\/compute\/instances","subtitle":"sub"},{"imagefile":"Compute\/Container Engine.png","title":"Kubernetes Engine","arg":"\/kubernetes","subtitle":"sub"},{"imagefile":"Compute\/Cloud Functions.png","title":"Cloud Functions","arg":"\/functions","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Bigtable.png","title":"Bigtable","arg":"\/bigtable","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Datastore.png","title":"Datastore","arg":"\/datastore","subtitle":"sub"},{"imagefile":"#Storage &amp; Databases\/Cloud Firestore.png","title":"Firestore","arg":"\/firestore","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Filestore.png","title":"Filestore","arg":"\/filestore","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Storage.png","title":"Storage","arg":"\/storage","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud SQL.png","title":"SQL","arg":"\/sql","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Spanner.png","title":"Spanner","arg":"\/spanner","subtitle":"sub"},{"imagefile":"Storage &amp; Databases\/Cloud Memorystore.png","title":"Memorystore","arg":"\/memorystore","subtitle":"sub"},{"imagefile":"Networking\/Virtual Private Cloud.png","title":"VPC Network","arg":"\/networking","subtitle":"sub"},{"imagefile":"Networking\/Cloud Load Balancing.png","title":"Network services","arg":"\/net-services","subtitle":"sub"},{"imagefile":"#Networking\/Virtual Private Cloud.png","title":"Hybrid Connectivity","arg":"\/hybrid","subtitle":"sub"},{"imagefile":"#Networking\/Virtual Private Cloud.png","title":"Network Service Tiers","arg":"\/net-tier","subtitle":"sub"},{"imagefile":"#Networking\/Virtual Private Cloud.png","title":"Network Security","arg":"\/net-security","subtitle":"sub"},{"imagefile":"Management Tools\/StackDriver.png","title":"Monitoring","arg":"\/account\/login","subtitle":"sub"},{"imagefile":"Management Tools\/Debugger.png","title":"Debug","arg":"\/debug","subtitle":"sub"},{"imagefile":"Management Tools\/Trace.png","title":"Trace","arg":"\/traces","subtitle":"sub"},{"imagefile":"Management Tools\/Logging.png","title":"Logging","arg":"\/logs","subtitle":"sub"},{"imagefile":"Management Tools\/Error Reporting.png","title":"Error Reporting","arg":"\/errors","subtitle":"sub"},{"imagefile":"Management Tools\/Logging.png","title":"Profiler","arg":"\/profiler","subtitle":"sub"},{"imagefile":"Developer Tools\/Container Builder.png","title":"Cloud Build","arg":"\/cloud-build","subtitle":"sub"},{"imagefile":"#Developer Tools\/Cloud Scheduler.png","title":"Cloud Scheduler","arg":"\/cloudscheduler","subtitle":"sub"},{"imagefile":"#Developer Tools\/Cloud Tasks.png","title":"Cloud Tasks","arg":"\/cloudtasks","subtitle":"sub"},{"imagefile":"Developer Tools\/Container Registry.png","title":"Container Registry","arg":"\/gcr","subtitle":"sub"},{"imagefile":"#Developer Tools\/Identity Platform.png","title":"Identity Platform","arg":"\/customer-indentity","subtitle":"sub"},{"imagefile":"Developer Tools\/Cloud Deployment Manager.png","title":"Deployment Manager","arg":"\/dm","subtitle":"sub"},{"imagefile":"#Developer Tools\/Private Catalog.png","title":"Private Catalog","arg":"\/catalog","subtitle":"sub"},{"imagefile":"API Platform &amp; Ecosystems\/Cloud Endpoints.png","title":"Endpoints","arg":"\/endpoints","subtitle":"sub"},{"imagefile":"Big Data\/Cloud Composer.png","title":"Composer","arg":"\/composer","subtitle":"sub"},{"imagefile":"Big Data\/Cloud Dataproc.png","title":"Dataproc","arg":"\/dataproc","subtitle":"sub"},{"imagefile":"Big Data\/Cloud PubSub.png","title":"Pub\/Sub","arg":"\/cloudpubsub","subtitle":"sub"},{"imagefile":"Big Data\/Cloud Dataflow.png","title":"Dataflow","arg":"\/dataflow","subtitle":"sub"},{"imagefile":"Big Data\/BigQuery.png","title":"BigQuery","arg":"\/bigquery","subtitle":"sub"},{"imagefile":"Internet of Things\/Cloud IoT Core.png","title":"IoT Core","arg":"\/iot","subtitle":"sub"},{"imagefile":"#Big Data\/Cloud DataCatalog.png","title":"DataCatalog","arg":"\/datacatalog","subtitle":"sub"},{"imagefile":"#Big Data\/Cloud DataFusion.png","title":"DataFusion","arg":"\/data-fusion","subtitle":"sub"},{"imagefile":"Big Data\/Genomics.png","title":"Genomics","arg":"\/genomics","subtitle":"sub"},{"imagefile":"#Big Data\/Healthcare.png","title":"Healthcare","arg":"\/healthcare","subtitle":"sub"},{"imagefile":"Big Data\/Cloud Dataprep.png","title":"Dataprep","arg":"\/dataprep","subtitle":"sub"},{"imagefile":"Cloud AI\/Data Labeling.png","title":"Data Labeling","arg":"\/data-labeling","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Machine Learning.png","title":"AI Platform","arg":"\/ai-platform","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Natural Language API.png","title":"Natural Language","arg":"\/natural-language","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Recommendation AI.png","title":"Recommendations AI","arg":"\/recommendation","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud AutoML.png","title":"Tables","arg":"\/automl-tables","subtitle":"sub"},{"imagefile":"Cloud AI\/Talent Solution.png","title":"Talent Solution","arg":"\/talent-solution","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Translation API.png","title":"Translation","arg":"\/translation","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Vision API.png","title":"Vision","arg":"\/vision","subtitle":"sub"},{"imagefile":"Cloud AI\/Cloud Video Intelligence API.png","title":"Video Intelligence","arg":"\/vide-intelligence","subtitle":"sub"}]</string>
+				<key>keyword</key>
+				<string>gcp</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Place gcp service</string>
+				<key>title</key>
+				<string>Access gcp console</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>F9C5D524-F6F0-4EF4-BFC8-759A708D7627</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>ECBD7858-52A2-4814-80A6-B5B18CA044DF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>400</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+		<key>F9C5D524-F6F0-4EF4-BFC8-759A708D7627</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
