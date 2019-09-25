@@ -6,6 +6,14 @@ jobs:
   update_draft_release:
     runs-on: ubuntu-latest
     steps:
-      - uses: toolmantim/release-drafter@v5.2.0
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build
+        run:  zip -r -X "./gcp-console.alfredworkflow" . -x ".github" -x ".git" -x "Makefile" -x "items.csv"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            gcp-console.alfredworkflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
